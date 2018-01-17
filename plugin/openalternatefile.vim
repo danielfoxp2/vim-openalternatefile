@@ -47,17 +47,20 @@ function! BuildUnitsPath()
 
     if going_to_spec
         if in_web_dir
-            let new_file = substitute(new_file, '^web/', '', '')
+            let new_file = substitute(new_file, '^web/', 'spec/web/', '')
+        else
+            let new_file = substitute(new_file, 'lib/', 'spec/', '')
         endif
         let new_file = substitute(new_file, '\.ex$', '_spec.exs', '')
-        let new_file = substitute(new_file, 'lib/', 'spec/', '')
     else
-        let new_file = substitute(new_file, '_spec\.exs$', '.ex', '')
-        let new_file = substitute(new_file, 'spec/', 'lib/', '')
         if in_web_dir
-            let new_file = 'web/' . new_file
+            let new_file = substitute(new_file, '^spec/web/', 'web/', '')
+        else
+            let new_file = substitute(new_file, 'spec/', 'lib/', '')
         endif
+        let new_file = substitute(new_file, '_spec\.exs$', '.ex', '')
     endif
+ 
     return new_file
 endfunction
 
