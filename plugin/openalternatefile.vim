@@ -1,7 +1,7 @@
-if exists('g:openalternatefile)
+if exists('g:openalternatefile_phx_1_2')
     finish
 endif
-let g:openalternatefile = 1
+let g:openalternatefile_phx_1_2 = 1
 
 function! OpenATestAlternate()
     let new_file = AlternateForCurrentFile()
