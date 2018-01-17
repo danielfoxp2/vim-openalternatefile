@@ -12,6 +12,11 @@ same name (almost - see USAGE).
 
 USAGE
 
+If you are working in a webapp using phoenix framework, this plugin will only work to versions prior 1.3 of 
+phoenix.
+
+USAGE
+
 `<leader>.` is the way to go.
 
 Let's say that you are editing the my_file_spec.exs, when you type in normal mode `<leader>.` the plugin 

@@ -1,10 +1,15 @@
 ## INTRODUCTION
 
-This plugin is intended to help you find the alternate test or production file faster.
+This plugin is intended to help you find the alternate test or production file faster in elixir.
 When you are editing the production code, the plugin will open the spec file of it and vice-versa.
 
 The plugin has a limitation because it works under a convention: the spec and production code has the 
 same name (almost - see USAGE).
+
+### WARNING
+
+If you are working in a webapp using phoenix framework, this plugin will only work to versions prior 1.3 of 
+phoenix.
 
 ## USAGE
 
