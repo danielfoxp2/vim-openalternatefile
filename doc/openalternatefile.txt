@@ -8,7 +8,7 @@ This plugin is intended to help you find the alternate test or production file f
 When you are editing the production code, the plugin will open the spec file of it and vice-versa.
 
 The plugin has a limitation because it works under a convention: the spec and production code has the 
-same name (almost - see USAGEJJ).
+same name (almost - see USAGE).
 
 USAGE
 
