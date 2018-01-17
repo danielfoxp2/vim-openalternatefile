@@ -5,7 +5,7 @@ let g:openalternatefile_phx_1_2 = 1
 
 function! OpenATestAlternate()
     let new_file = AlternateForCurrentFile()
-    exec 'e: ' . new_file
+    exec 'e: ' . fnamescape(new_file)
 endfunction
 
 function! AlternateForCurrentFile()
